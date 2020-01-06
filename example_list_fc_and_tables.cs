@@ -1,5 +1,13 @@
         /// <summary>
         /// Example to create list of feature classes and tables
+        /// To use this module with "await" in other async modules, then redefine the declaration as:
+        /// 
+        /// private async Task<what_you_want_to_return> SearchSoilGDBPath()
+        /// {
+        ///                             ... 
+        ///                             ... 
+        ///     return what_you_want_to_return /* AT THE END OF THE MODULE */
+        /// }
         /// </summary>
         private async void SearchSoilGDBPath()         ///////////// select gdb 
         {
