@@ -1,4 +1,4 @@
-        private async void GetActiveMapLayersAsync()
+        private async void GetPolylineFeaturelayersOnlyAsync()
         {
             // Check if Active MapView exists
             if (MapView.Active == null)
