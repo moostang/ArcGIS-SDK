@@ -1,0 +1,8 @@
+        <ListView ItemsSource="{Binding Path=Code}" HorizontalAlignment="Left" Height="164" Margin="10,46,0,0" Grid.Row="1" VerticalAlignment="Top" Width="226">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="160" Header="Description" DisplayMemberBinding="{Binding Description}"/>
+                    <GridViewColumn Width="160" Header="Notes" DisplayMemberBinding="{Binding Notes}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
