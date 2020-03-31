@@ -68,3 +68,12 @@
             return true;
         }
         
+
+
+
+
+// AND DON'T FORGET TO SAVE EDITS
+
+            // Save all edits // CALL THIS AFTER ALL EDITS ARE PERFORMED. 
+            if (Project.Current.HasEdits)
+                await Project.Current.SaveEditsAsync();
