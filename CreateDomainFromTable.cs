@@ -7,7 +7,7 @@
         /// <param name="descriptionLength">Length of Description</param>
         public static async Task CreateDomainFromTable(string currentGDB, string domainTable, List<string> domainDescriptionList, short descriptionLength)
         {
-            #region Create new domain from list of Component ID ["CMP_ID"]
+            #region Create new domain from list of description 
             // Create new empty domain table //                        
             var argsCreateTable = gp.MakeValueArray(currentGDB, domainTable);
             await gp.ExecuteToolAsync("management.CreateTable", argsCreateTable);
@@ -90,5 +90,6 @@
             string domainName = domainTable;
             var argsTableToDomain = gp.MakeValueArray(domainTable, "Code", "Description", currentGDB, domainName, "Description", "REPLACE");
             var outputTableToDomain = await gp.ExecuteToolAsync("management.TableToDomain", argsTableToDomain);
-            #endregion  Create new domain from list of Component ID ["CMP_ID"]
+                
+            #endregion  Create new domain from list of description
         }
